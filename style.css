@@ -1,7 +1,8 @@
 :root {
-    --color-primary: rgb(195, 203, 238);
+    --color-primary: #ccd6f6;
     --color-secondary: rgb(136, 144, 179);
     --color-highlight: rgb(0, 255, 219);
+    --color-bg: rgb(8, 23, 49);
 }
 
 * {
@@ -14,14 +15,41 @@
 body {
     font-family: 'Calibre', sans-serif;
     background-color: rgb(8, 23, 49);
+    overflow-x: hidden;
 }
 
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 2px solid white; */
+}
 
-.nav-bar-container {
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(72, 85, 115);
+    border-radius: 10px;
+}
+
+.nav-bar {
     display: flex;
     width: 100%;
+    position: fixed;
+    top: 0;
     /* border: 1px solid black; */
     padding: 0 2rem;
+    background-color: var(--color-bg);
 }
 
 .nav-bar-items {
@@ -36,7 +64,7 @@ body {
 
 .nav-bar-item {
     margin-right: 4rem;
-    padding: 3rem 0;
+    padding: 2rem 0;
     color: var(--color-secondary)
 }
 
@@ -45,11 +73,14 @@ body {
     cursor: pointer;
 }
 
+.hero-section {
+    align-items: center;
+}
+
 .hero {
     width: 80%;
     max-width: 1000px;
     /* border: 1px solid black; */
-    margin: 5rem auto 0 auto;
 }
 
 .hero-text-1 {
@@ -81,4 +112,75 @@ body {
 
 .hero-text-3>span {
     color: var(--color-highlight);
+}
+
+.about-me-section {
+    align-items: center;
+}
+
+.about-me {
+    width: 80%;
+    max-width: 1000px;
+}
+
+.about-me-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.about-me-heading>span {
+    color: var(--color-highlight);
+    font-size: 1.5rem;
+
+}
+
+.about-me-heading>h2 {
+    color: var(--color-primary);
+    font-size: 1.9rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.line {
+    background-color: rgb(33, 51, 87);
+    height: 2px;
+    flex-grow: 1;
+}
+
+.about-me-content {
+    font-size: 1.1rem;
+    color: var(--color-secondary);
+    line-height: 1.8rem;
+}
+
+.highlight {
+    color: var(--color-highlight);
+}
+
+.list-item {
+    display: block;
+}
+
+.projects {
+    width: 80%;
+    max-width: 1000px;
+}
+
+.projects-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.projects-heading>span {
+    color: var(--color-highlight);
+    font-size: 1.5rem;
+}
+
+.projects-heading>h2 {
+    color: var(--color-primary);
+    font-size: 1.9rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
