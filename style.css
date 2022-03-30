@@ -163,9 +163,6 @@ section {
     display: block;
 }
 
-.projects-section {
-    /* margin-top: 7rem; */
-}
 
 .projects {
     width: 80%;
@@ -256,4 +253,21 @@ section {
     color: var(--color-primary);
     font-size: 1rem;
     margin-left: 1rem;
+}
+
+.project-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-links>i {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    margin-left: 1.3rem;
+    transition: color .2s ease-in;
+}
+
+.project-links>i:hover {
+    color: var(--color-highlight);
+    cursor: pointer;
 }
