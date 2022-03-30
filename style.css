@@ -190,6 +190,7 @@ section {
 .projects-project {
     display: flex;
     position: relative;
+    margin-bottom: 5rem;
 }
 
 .project-img {
@@ -206,11 +207,25 @@ section {
     height: 100%;
     content: " ";
     position: absolute;
-    top: 0;
-    left: 0;
+
     background-color: var(--color-highlight);
     opacity: .3;
     transition: opacity .2s ease-in;
+}
+
+.img-left::after {
+    top: 0;
+    left: 0;
+}
+
+
+.img-right-origin {
+    transform: translateX(-16.6%);
+}
+
+.img-right::after {
+    top: 0;
+    right: 0;
 }
 
 .project-img:hover::after {
@@ -223,8 +238,16 @@ section {
     /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+
     justify-content: center;
+}
+
+.project-content-right {
+    align-items: flex-end;
+}
+
+.project-content-left {
+    align-items: flex-start;
 }
 
 .project-content>h2 {
@@ -236,23 +259,37 @@ section {
 .project-content-info {
     color: var(--color-secondary);
     line-height: 1.8rem;
-    text-align: end;
     background-color: var(--color-text-bg);
-    padding: 1.5rem 1.5rem 1.5rem 2rem;
     border-radius: .3rem;
     z-index: 1;
 }
 
+.project-content-info-right {
+    text-align: end;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+}
+
+.project-content-info-left {
+    text-align: start;
+    padding: 1.5rem 2rem 1.5rem 1.5rem;
+}
+
 .project-tech-list {
     display: flex;
-    justify-content: flex-end;
     margin: 1rem 0;
 }
 
 .project-tech {
     color: var(--color-primary);
     font-size: 1rem;
+}
+
+.project-tech-right {
     margin-left: 1rem;
+}
+
+.project-tech-left {
+    margin-right: 1rem;
 }
 
 .project-links {
@@ -260,14 +297,22 @@ section {
     justify-content: flex-end;
 }
 
-.project-links>i {
+.project-links>a {
     color: var(--color-primary);
     font-size: 1.3rem;
-    margin-left: 1.3rem;
+
     transition: color .2s ease-in;
 }
 
-.project-links>i:hover {
+.project-links-right>a {
+    margin-left: 1.3rem;
+}
+
+.project-links-left>a {
+    margin-right: 1.3rem;
+}
+
+.project-links>a:hover {
     color: var(--color-highlight);
     cursor: pointer;
 }
