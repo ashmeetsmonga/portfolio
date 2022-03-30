@@ -2,7 +2,7 @@
     --color-primary: #ccd6f6;
     --color-secondary: rgb(136, 144, 179);
     --color-highlight: rgb(0, 255, 219);
-    --color-bg: rgb(8, 23, 49);
+    --color-bg: #03071e;
     --color-text-bg: rgb(15, 31, 67);
 }
 
@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Calibre', sans-serif;
-    background-color: rgb(8, 23, 49);
+    background-color: var(--color-bg);
     overflow-x: hidden;
 }
 
@@ -117,6 +117,22 @@ section {
 
 .about-me-section {
     align-items: center;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid var(--color-highlight);
+    color: var(--color-highlight);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.btn:hover {
+    background-color: rgba(0, 255, 219, .1);
 }
 
 .about-me {
