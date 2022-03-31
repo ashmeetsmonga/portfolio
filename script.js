@@ -1,3 +1,4 @@
+const navBar = document.getElementById("nav-bar");
 const aboutBtn = document.getElementById("about-btn");
 const projectsBtn = document.getElementById("projects-btn");
 const aboutMeSection = document.getElementById("about-me-section");
@@ -31,3 +32,9 @@ projectsBtn.addEventListener("click", () => {
 experienceBtn.addEventListener("click", () => {
 	experienceSection.scrollIntoView({ behavior: "smooth" });
 });
+
+window.onscroll = () => {
+	console.log("Scrolling : " + document.documentElement.scrollTop);
+	if (document.documentElement.scrollTop > 0) navBar.classList.add("shadow");
+	else navBar.classList.remove("shadow");
+};

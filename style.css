@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
 
 :root {
     --color-primary: #ccd6f6;
@@ -55,6 +55,11 @@ section {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: all .2s ease-in;
+}
+
+.shadow {
+    box-shadow: 0px 5px 7px -5px #000000;
 }
 
 .nav-bar-logo {
@@ -77,8 +82,8 @@ section {
 }
 
 .nav-bar-item {
-    margin-right: 4rem;
-    padding: 2rem 0;
+    margin-left: 4rem;
+    padding: 1.8rem 0;
     color: var(--color-secondary)
 }
 
@@ -178,6 +183,8 @@ section {
 
 .hero-text-3>span {
     color: var(--color-highlight);
+    font-family: 'Lato';
+    font-weight: 700;
 }
 
 
@@ -243,6 +250,8 @@ section {
 
 .highlight {
     color: var(--color-highlight);
+    font-family: 'Lato';
+    font-weight: 700;
 }
 
 .list-item {
@@ -395,8 +404,29 @@ section {
     color: var(--color-primary);
 }
 
-.experience-position>span {
+.experience-position-company {
     color: var(--color-highlight);
+    font-family: 'Lato';
+    font-weight: 700;
+    padding-bottom: 3px;
+    position: relative;
+    text-decoration: none;
+}
+
+.experience-position-company::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--color-highlight);
+    transition: width .2s ease-in;
+    border-radius: 1px;
+}
+
+.experience-position-company:hover::after {
+    width: 100%;
 }
 
 .experience-time-period {
@@ -411,11 +441,12 @@ section {
 
 .experience-list-item {
     font-size: 1.1rem;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     margin: 1.5rem 0;
     padding-left: 2rem;
+    line-height: 1.5rem;
     background-image: url("/assets/images/list-style.png");
     background-repeat: no-repeat;
-    background-position: 0px 5px;
+    background-position: 0px 6px;
     background-size: .7rem;
 }
