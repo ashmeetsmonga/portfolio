@@ -274,7 +274,8 @@ section {
 
 .project-img {
     width: 50%;
-
+    display: flex;
+    align-items: center;
 }
 
 .project-img>img {
