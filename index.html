@@ -25,7 +25,7 @@
 		<!-- Navigation Bar -->
 
 		<nav class="nav-bar">
-			<div class="nav-bar-logo">
+			<div class="nav-bar-logo" id="nav-bar-logo">
 				<img src="/assets/images/nav-logo.png" alt="" />
 			</div>
 			<div class="nav-bar-items">
@@ -33,7 +33,9 @@
 				<div class="nav-bar-item" id="projects-btn">
 					<span>02.</span> Projects
 				</div>
-				<div class="nav-bar-item"><span>03.</span> Experience</div>
+				<div class="nav-bar-item" id="experience-btn">
+					<span>03.</span> Experience
+				</div>
 				<div class="nav-bar-item"><span>04.</span> Contact</div>
 			</div>
 		</nav>
@@ -59,7 +61,8 @@
 				<p class="hero-text-2">I build things for the web</p>
 				<p class="hero-text-3">
 					I am a software developer interested in building frontend projects for
-					the internet. Currently I am working as a Software Engineer at
+					the internet. Currently I am working as a
+					<span>Software Engineer</span> at
 					<span>Tata Consultancy Services (TCS)</span>.
 				</p>
 				<button class="btn">Resume</button>
@@ -68,7 +71,7 @@
 		<!-- About Me -->
 		<section class="about-me-section" id="about-me-section">
 			<div class="about-me">
-				<div class="about-me-heading">
+				<div class="section-heading">
 					<span>01.</span>
 					<h2>About Me</h2>
 					<div class="line"></div>
@@ -102,7 +105,7 @@
 		<!-- Projects -->
 		<section class="projects-section" id="projects-section">
 			<div class="projects">
-				<div class="projects-heading">
+				<div class="section-heading">
 					<span>02.</span>
 					<h2>Some Things I've Built</h2>
 					<div class="line"></div>
@@ -167,6 +170,38 @@
 							alt="Sudoku-Solver"
 						/>
 					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Experience -->
+		<section class="experience-section" id="experience-section">
+			<div class="experience-container">
+				<div class="section-heading">
+					<span>03.</span>
+					<h2>Where I've Worked</h2>
+					<div class="line"></div>
+				</div>
+				<div class="experience-content">
+					<div class="experience-position">
+						Systems Engineer <span>@Tata Consultancy Services</span>
+					</div>
+					<div class="experience-time-period">2021 - Present</div>
+					<ul class="experience-list">
+						<li class="experience-list-item">
+							Worked with a team of 10 members to manage the notification module
+							of TCSBancs
+						</li>
+						<li class="experience-list-item">
+							Successfully implemented various new features and UI changes.
+						</li>
+						<li class="experience-list-item">
+							Wrote modern, performant, maintainable code for diverse number of
+							features and solved various issues.
+						</li>
+						<li class="experience-list-item">
+							Worked with technologies like java, html, css, javascript.
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
