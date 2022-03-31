@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
 :root {
     --color-primary: #ccd6f6;
     --color-secondary: rgb(136, 144, 179);
@@ -56,7 +58,7 @@ section {
 }
 
 .nav-bar-logo {
-    width: 40px;
+    width: 35px;
 }
 
 .nav-bar-logo>img {
@@ -84,6 +86,54 @@ section {
     cursor: pointer;
 }
 
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-left {
+    left: 2%;
+}
+
+.sidebar-right {
+    right: 2%;
+}
+
+.sidebar-right-email {
+    position: absolute;
+    top: -150px;
+    /* border: 1px solid white; */
+    transform: rotate(90deg);
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: all .2s ease-in;
+    letter-spacing: 1px;
+}
+
+.sidebar-right-email:hover {
+    color: var(--color-highlight)
+}
+
+.sidebar-icon {
+    color: var(--color-secondary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    transition: all .2s ease-in;
+}
+
+.sidebar-icon:hover {
+    color: var(--color-highlight);
+}
+
+.sidebar-line {
+    width: 2px;
+    height: 100px;
+    background-color: var(--color-secondary);
+}
+
 .hero-section {
     align-items: center;
 }
@@ -99,6 +149,8 @@ section {
     font-size: 1.1rem;
     color: var(--color-highlight);
     /* font-weight: 100; */
+    font-family: 'Lato';
+    font-weight: 300;
 }
 
 .hero-text-name {
@@ -137,6 +189,8 @@ section {
     padding: 1rem 2rem;
     font-size: 1.2rem;
     margin-top: 2rem;
+    font-family: 'Lato';
+    font-weight: 300;
     border-radius: 5px;
     cursor: pointer;
     transition: all .2s ease-in;
@@ -235,24 +289,12 @@ section {
 
 .project-img>img:hover {
     opacity: 1;
-    /* border: none; */
 }
 
-/* .project-img::after {
-    width: 60%;
-    height: 100%;
-    content: " ";
-    position: absolute;
-
-    background-color: var(--color-highlight);
-    opacity: .3;
-    transition: opacity .2s ease-in;
-} */
-
-/* .img-left::after {
-    top: 0;
-    left: 0;
-} */
+.project-featured {
+    font-family: 'Lato';
+    font-weight: 300;
+}
 
 
 .img-right-origin {
@@ -263,10 +305,6 @@ section {
     top: 0;
     right: 0;
 }
-
-/* .project-img:hover::after {
-    opacity: 0;
-} */
 
 
 .project-content {
