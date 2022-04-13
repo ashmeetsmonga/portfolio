@@ -480,12 +480,18 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .sidebar {
+        display: none;
+    }
+
     .hero-text-name {
         font-size: 3rem;
     }
 
     .hero-text-2 {
         font-size: 2.5rem;
+
     }
 
     .hero-text-3 {
@@ -500,5 +506,56 @@ section {
 
     .hero>a {
         align-self: center;
+        /* margin-top: 4rem; */
+    }
+
+    .line {
+        display: none;
+    }
+
+    .about-me {
+        width: 80%;
+    }
+
+
+    .section-heading {
+        justify-content: center;
+    }
+
+    .section-heading>span {
+        font-size: 1.3rem;
+    }
+
+    .section-heading>h2 {
+        font-size: 1.5rem;
+    }
+
+    .projects {
+        margin-top: 5rem;
+    }
+
+    .projects-project {
+        margin-top: 1rem;
+    }
+
+    .project-img {
+        display: none;
+    }
+
+    .project-content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .project-content-info {
+        text-align: center;
+    }
+
+    .experience-container {
+        width: 80%;
+    }
+
+    .section-heading>h3 {
+        font-size: 1.5rem;
     }
 }
