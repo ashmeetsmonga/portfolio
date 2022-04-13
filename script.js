@@ -6,6 +6,8 @@ const projectsSection = document.getElementById("projects-section");
 const navBarLogo = document.getElementById("nav-bar-logo");
 const experienceBtn = document.getElementById("experience-btn");
 const experienceSection = document.getElementById("experience-section");
+const contactMeSection = document.getElementById("contact-me-section");
+const contactMeBtn = document.getElementById("contact-me-btn");
 
 navBarLogo.addEventListener("click", () => {
 	window.scrollTo({
@@ -38,3 +40,7 @@ window.onscroll = () => {
 	if (document.documentElement.scrollTop > 0) navBar.classList.add("shadow");
 	else navBar.classList.remove("shadow");
 };
+
+contactMeBtn.addEventListener("click", () => {
+	contactMeSection.scrollIntoView({ behavior: "smooth" });
+});
