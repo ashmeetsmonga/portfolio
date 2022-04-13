@@ -8,6 +8,8 @@ const experienceBtn = document.getElementById("experience-btn");
 const experienceSection = document.getElementById("experience-section");
 const contactMeSection = document.getElementById("contact-me-section");
 const contactMeBtn = document.getElementById("contact-me-btn");
+const menuIconBtn = document.getElementById("menu-icon");
+const mobileNavSidebar = document.getElementById("mobile-nav-sidebar");
 
 navBarLogo.addEventListener("click", () => {
 	window.scrollTo({
@@ -42,4 +44,8 @@ window.onscroll = () => {
 
 contactMeBtn.addEventListener("click", () => {
 	contactMeSection.scrollIntoView({ behavior: "smooth" });
+});
+
+menuIconBtn.addEventListener("click", () => {
+	mobileNavSidebar.classList.toggle("show-sidebar");
 });
