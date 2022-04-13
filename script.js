@@ -36,7 +36,6 @@ experienceBtn.addEventListener("click", () => {
 });
 
 window.onscroll = () => {
-	console.log("Scrolling : " + document.documentElement.scrollTop);
 	if (document.documentElement.scrollTop > 0) navBar.classList.add("shadow");
 	else navBar.classList.remove("shadow");
 };
