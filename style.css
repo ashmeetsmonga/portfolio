@@ -478,3 +478,17 @@ section {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .hero-text-name {
+        font-size: 3.5rem;
+    }
+
+    .hero-text-2 {
+        font-size: 3rem;
+    }
+
+    .hero-text-3 {
+        width: 100%;
+    }
+}
