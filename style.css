@@ -26,6 +26,7 @@ section {
     width: 100vw;
     display: flex;
     justify-content: center;
+    transition: all .3s ease;
     /* align-items: center; */
     /* border: 2px solid white; */
 }
@@ -518,6 +519,8 @@ section {
     .mobile-nav-sidebar {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        padding-left: 6rem;
         position: fixed;
         top: 0;
         left: 100%;
@@ -529,7 +532,22 @@ section {
     }
 
     .show-sidebar {
-        left: 20%;
+        left: 30%;
+    }
+
+
+
+    .mobile-nav-sidebar-item {
+        font-size: 1.5rem;
+        color: var(--color-primary);
+        margin: 4rem 0;
+    }
+
+    .mobile-nav-sidebar-item>span {
+        font-size: 1rem;
+        font-family: 'Lato';
+        color: var(--color-highlight);
+        font-weight: 100;
     }
 
     .sidebar {

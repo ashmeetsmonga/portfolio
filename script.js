@@ -1,3 +1,4 @@
+const body = document.body;
 const navBar = document.getElementById("nav-bar");
 const aboutBtn = document.getElementById("about-btn");
 const projectsBtn = document.getElementById("projects-btn");
@@ -48,4 +49,12 @@ contactMeBtn.addEventListener("click", () => {
 
 menuIconBtn.addEventListener("click", () => {
 	mobileNavSidebar.classList.toggle("show-sidebar");
+	const sections = document.getElementsByTagName("section");
+	for (let i = 0; i < sections.length; i++) {
+		console.log(sections[i].style.filter);
+		if (sections[i].style.filter === "blur(0.3rem)") {
+			sections[i].style.filter = "";
+			console.log(true);
+		} else sections[i].style.filter = "blur(0.3rem)";
+	}
 });
