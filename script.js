@@ -54,7 +54,7 @@ menuIconBtn.addEventListener("click", () => {
 		console.log(sections[i].style.filter);
 		if (sections[i].style.filter === "blur(0.3rem)") {
 			sections[i].style.filter = "";
-			console.log(true);
+			// console.log(true);
 		} else sections[i].style.filter = "blur(0.3rem)";
 	}
 });
