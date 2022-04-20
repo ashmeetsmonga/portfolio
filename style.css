@@ -401,8 +401,8 @@ section {
 }
 
 .experience-container {
-    width: 50%;
-    max-width: 1000px;
+    width: 70%;
+    max-width: 700px;
 }
 
 .experience-position {
@@ -485,6 +485,10 @@ section {
     margin-right: 1rem;
 }
 
+.mobile-nav-bar {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
 
     .nav-bar {
@@ -535,9 +539,6 @@ section {
         left: 30%;
     }
 
-    .mobile-nav-sidebar-container {
-        /* border: 1px solid white; */
-    }
 
     .mobile-nav-sidebar-item {
         font-size: 1.5rem;
